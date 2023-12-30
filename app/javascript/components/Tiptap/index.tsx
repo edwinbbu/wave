@@ -15,7 +15,7 @@ const MenuBar = () => {
   }
 
   return (
-    <>
+    <div>
       <button
         onClick={() => editor.chain().focus().toggleBold().run()}
         disabled={!editor.can().chain().focus().toggleBold().run()}
@@ -142,7 +142,7 @@ const MenuBar = () => {
       >
         purple
       </button>
-    </>
+    </div>
   );
 };
 
